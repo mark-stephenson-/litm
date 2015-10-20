@@ -15,6 +15,7 @@ gem 'puma'
 gem 'simple_form'
 gem 'sucker_punch'
 gem 'backstretch-rails'
+gem 'dotenv-rails'
 group :development do
   gem 'better_errors'
   gem 'guard-bundler'
@@ -36,7 +37,6 @@ group :test do
   gem 'selenium-webdriver'
 end
 group :development, :test do
-  gem 'dotenv-rails'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
