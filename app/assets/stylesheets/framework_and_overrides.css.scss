@@ -9,7 +9,7 @@ img {
   }
 // override for the 'Home' navigation link
 .navbar-brand {
-  font-size: inherit;
+  padding-top: 16px;
   }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
@@ -37,7 +37,7 @@ main {
   @extend .container;
   padding-bottom: 80px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
+  margin-top: 71px; // accommodate the navbar
   padding-left: 0px;
   padding-right: 0px;
   }
@@ -45,3 +45,10 @@ section {
   @extend .row;
   margin-top: 20px;
   }
+.navbar-default {
+ background-color: rgba(0, 0, 0, 0.7);
+ height: 71px;
+}
+.pad_top_small {
+  padding-top: 5px;
+}

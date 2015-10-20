@@ -1,20 +1,36 @@
 <script type="text/javascript">
 = "$.backstretch(['#{image_path('girls_bar.jpg')}','#{image_path('club.jpg')}','#{image_path('girls_redwine.jpg')}','#{image_path('bowling.jpg')}','#{image_path('mbx.jpg')}','#{image_path('quad.jpg')}','#{image_path('lads_beer.jpg')}','#{image_path('friends_selfie.jpg')}','#{image_path('limo_champers.jpg')}','#{image_path('paintball.jpg')}','#{image_path('beach_parade.jpg')}','#{image_path('ladies_beach.jpg')}','#{image_path('oranges.jpg')}','#{image_path('colourrun.jpg')}']);"
 </script>
-.fade50
+.fade70
   .container
     .col-md-6
-      %h2 How to win at being friends
-      %p Use our FREE automated app to take the hassle out of organising your mates!
-      %ul
-        %li Simply tell us who you're inviting
-        %li When and where you want to go
-        %li When you need to know by
-      %p Dave, our friendly AI robot helper will chase and nag until all of your friends are on board (whoo whoo!).
+      %h1 When did you last do something with friends?
+      %h3.lead You'd love a day or night out, or even a small break away somewhere to catch up but
+      %ul#problems
+        %li Your friends are unable to pick dates and times
+        %li Getting a firm commitment is a nightmare
+        %li Theres always someone who drops out
+      %p.lead Dave, our friendly AI robot helper will chase and nag until all of your friends are on board (whoo whoo!).
     .col-md-6
       .form-signup
         = simple_form_for @visitor, :html => { :class => 'form-inline' } do |f|
           = f.error_notification
           .input
             = f.input_field :email, label: false, :placeholder => 'Your email address...', :class => 'button'
-            = f.button :submit, "START WINNING", :class => "button", :id => 'visitor_submit'
+            = f.button :submit, "START NOW", :class => "button", :id => 'visitor_submit'
+          %p.small.pad_top_small
+            *We're currently in closed trials, please join our queue and we'll send you an invite when we're ready to help more friends keep in touch
+          #benefits
+            %ul.no_bullets
+              %li
+                %p.lead
+                  %span.tick.glyphicon.glyphicon-ok
+                  Simply choose friends
+              %li
+                %p.lead
+                  %span.tick.glyphicon.glyphicon-ok
+                  Set dates, times and location
+              %li
+                %p.lead
+                  %span.tick.glyphicon.glyphicon-ok
+                  Sit back and <i><strong>leave it to me</strong></i>

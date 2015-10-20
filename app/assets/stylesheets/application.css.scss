@@ -42,25 +42,51 @@ body {
 #visitor_submit {
   width: 35%;
   height: 46px;
-  background: #E86C8D;
+  background: #24DC24;
   font-family: inherit;
   font-weight: bold;
-  color: inherit;
+  color: #fff;
   letter-spacing: 1px;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   transition: background .3s ease-in-out;
 }
 #submit:hover {
-  background: #d45d7d;
+  background: #13cb13;
 }
 input:focus {
   outline: none;
-  outline: 2px solid #E86C8D;
-  box-shadow: 0 0 2px #E86C8D;
+  outline: 2px solid #13cb13;
+  box-shadow: 0 0 2px #13cb13;
 }
-.fade50 {
-  background: rgba(255, 255, 255, 0.3);
+.fade70 {
+  background: rgba(255, 255, 255, 0.7);
   margin: 0px;
-  color: #2d2d2d
+  margin-bottom: 20px;
+  color: #2d2d2d;
+  padding: 40px 0px 10px 0px;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.tick {
+  color: #24DC24;
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+.no_bullets {
+  list-style-type: none;
+}
+
+#benefits {
+ padding: 30px 0px 10px;
+}
+
+#problems {
+  font-size: 20px;
+  padding-bottom: 10px;
 }
